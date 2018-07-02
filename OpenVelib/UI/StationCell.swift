@@ -17,6 +17,7 @@ class StationCell: UITableViewCell {
     @IBOutlet weak var lastUpdateLabel: UILabel!
     
     
+    
 }
 
 

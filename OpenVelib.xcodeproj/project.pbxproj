@@ -13,8 +13,14 @@
 		768292A720E6B20300B1285F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 768292A620E6B20300B1285F /* Assets.xcassets */; };
 		768292AA20E6B20300B1285F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 768292A820E6B20300B1285F /* LaunchScreen.storyboard */; };
 		768292B220E6B27800B1285F /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768292B120E6B27800B1285F /* APIController.swift */; };
-		768292B420E6B4AA00B1285F /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768292B320E6B4AA00B1285F /* Station.swift */; };
+		768292B420E6B4AA00B1285F /* Station+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768292B320E6B4AA00B1285F /* Station+.swift */; };
 		768292B720E6BCD900B1285F /* StationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768292B620E6BCD900B1285F /* StationCell.swift */; };
+		768292BC20E7933200B1285F /* StatusControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768292BB20E7933100B1285F /* StatusControll.swift */; };
+		768619CB20E802170063888E /* velib.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 768619C920E802170063888E /* velib.xcdatamodeld */; };
+		768619CE20E805AF0063888E /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768619CD20E805AF0063888E /* FileManager.swift */; };
+		768619D020E805DC0063888E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768619CF20E805DC0063888E /* DataManager.swift */; };
+		768619D320E8D5970063888E /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768619D220E8D5970063888E /* Date+.swift */; };
+		7C6F23A540674A56D5DDAB46 /* Pods_OpenVelib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A994AB0D24E0B7141E27AFD4 /* Pods_OpenVelib.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +32,16 @@
 		768292A920E6B20300B1285F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		768292AB20E6B20300B1285F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		768292B120E6B27800B1285F /* APIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
-		768292B320E6B4AA00B1285F /* Station.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		768292B320E6B4AA00B1285F /* Station+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Station+.swift"; sourceTree = "<group>"; };
 		768292B620E6BCD900B1285F /* StationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationCell.swift; sourceTree = "<group>"; };
+		768292BB20E7933100B1285F /* StatusControll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusControll.swift; sourceTree = "<group>"; };
+		768619CA20E802170063888E /* velib.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = velib.xcdatamodel; sourceTree = "<group>"; };
+		768619CD20E805AF0063888E /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		768619CF20E805DC0063888E /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		768619D220E8D5970063888E /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		A0ED0D3472492C60D2676D27 /* Pods-OpenVelib.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenVelib.release.xcconfig"; path = "Pods/Target Support Files/Pods-OpenVelib/Pods-OpenVelib.release.xcconfig"; sourceTree = "<group>"; };
+		A994AB0D24E0B7141E27AFD4 /* Pods_OpenVelib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenVelib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4FE6B2D3D384798C6F63D97 /* Pods-OpenVelib.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenVelib.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OpenVelib/Pods-OpenVelib.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C6F23A540674A56D5DDAB46 /* Pods_OpenVelib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +61,8 @@
 			children = (
 				7682929E20E6B20200B1285F /* OpenVelib */,
 				7682929D20E6B20200B1285F /* Products */,
+				C92CFDCF7609734C24F41759 /* Pods */,
+				DF13232B3AFA36D5E1B6017E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,25 +77,28 @@
 		7682929E20E6B20200B1285F /* OpenVelib */ = {
 			isa = PBXGroup;
 			children = (
+				768619D120E8D5600063888E /* Tools */,
+				768619CC20E805510063888E /* CoreData */,
 				768292B820E6C2D900B1285F /* Controller */,
-				768292B520E6BCA700B1285F /* View */,
+				768292B520E6BCA700B1285F /* UI */,
 				7682929F20E6B20300B1285F /* AppDelegate.swift */,
 				768292A320E6B20300B1285F /* Main.storyboard */,
 				768292A620E6B20300B1285F /* Assets.xcassets */,
 				768292A820E6B20300B1285F /* LaunchScreen.storyboard */,
 				768292AB20E6B20300B1285F /* Info.plist */,
 				768292B120E6B27800B1285F /* APIController.swift */,
-				768292B320E6B4AA00B1285F /* Station.swift */,
+				768619C920E802170063888E /* velib.xcdatamodeld */,
 			);
 			path = OpenVelib;
 			sourceTree = "<group>";
 		};
-		768292B520E6BCA700B1285F /* View */ = {
+		768292B520E6BCA700B1285F /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				768292BB20E7933100B1285F /* StatusControll.swift */,
 				768292B620E6BCD900B1285F /* StationCell.swift */,
 			);
-			path = View;
+			path = UI;
 			sourceTree = "<group>";
 		};
 		768292B820E6C2D900B1285F /* Controller */ = {
@@ -89,6 +109,41 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		768619CC20E805510063888E /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				768619CD20E805AF0063888E /* FileManager.swift */,
+				768619CF20E805DC0063888E /* DataManager.swift */,
+				768292B320E6B4AA00B1285F /* Station+.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		768619D120E8D5600063888E /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				768619D220E8D5970063888E /* Date+.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		C92CFDCF7609734C24F41759 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4FE6B2D3D384798C6F63D97 /* Pods-OpenVelib.debug.xcconfig */,
+				A0ED0D3472492C60D2676D27 /* Pods-OpenVelib.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DF13232B3AFA36D5E1B6017E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A994AB0D24E0B7141E27AFD4 /* Pods_OpenVelib.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 768292AE20E6B20300B1285F /* Build configuration list for PBXNativeTarget "OpenVelib" */;
 			buildPhases = (
+				BE77DD1A16E436D947D0EA85 /* [CP] Check Pods Manifest.lock */,
 				7682929820E6B20200B1285F /* Sources */,
 				7682929920E6B20200B1285F /* Frameworks */,
 				7682929A20E6B20200B1285F /* Resources */,
+				5449DDAC980960D863F2798E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,16 +213,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5449DDAC980960D863F2798E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OpenVelib/Pods-OpenVelib-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ESPullToRefresh/ESPullToRefresh.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ESPullToRefresh.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-OpenVelib/Pods-OpenVelib-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE77DD1A16E436D947D0EA85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenVelib-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7682929820E6B20200B1285F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				768292B720E6BCD900B1285F /* StationCell.swift in Sources */,
+				768619CB20E802170063888E /* velib.xcdatamodeld in Sources */,
 				768292A220E6B20300B1285F /* ViewController.swift in Sources */,
 				768292A020E6B20300B1285F /* AppDelegate.swift in Sources */,
-				768292B420E6B4AA00B1285F /* Station.swift in Sources */,
+				768292B420E6B4AA00B1285F /* Station+.swift in Sources */,
+				768292BC20E7933200B1285F /* StatusControll.swift in Sources */,
 				768292B220E6B27800B1285F /* APIController.swift in Sources */,
+				768619D320E8D5970063888E /* Date+.swift in Sources */,
+				768619D020E805DC0063888E /* DataManager.swift in Sources */,
+				768619CE20E805AF0063888E /* FileManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +401,7 @@
 		};
 		768292AF20E6B20300B1285F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4FE6B2D3D384798C6F63D97 /* Pods-OpenVelib.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -315,6 +417,7 @@
 		};
 		768292B020E6B20300B1285F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0ED0D3472492C60D2676D27 /* Pods-OpenVelib.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -350,6 +453,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		768619C920E802170063888E /* velib.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				768619CA20E802170063888E /* velib.xcdatamodel */,
+			);
+			currentVersion = 768619CA20E802170063888E /* velib.xcdatamodel */;
+			path = velib.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7682929420E6B20200B1285F /* Project object */;
 }
